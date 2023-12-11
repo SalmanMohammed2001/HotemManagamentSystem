@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="70e25bd6-186b-47c3-bc19-b75f9cd9cd99">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.String"/>
+	<field name="name" class="java.lang.String"/>
+	<field name="RoomId" class="java.lang.String"/>
+	<field name="Price" class="java.lang.String"/>
+	<field name="dayCount" class="java.lang.String"/>
+	<field name="totalCost" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="210" y="20" width="170" height="30" uuid="cd28c425-f61f-4b3c-a6ce-aa4e4d6fb0f7"/>
+				<text><![CDATA[Booking details Bill]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="360" splitType="Stretch">
+			<textField>
+				<reportElement x="300" y="60" width="80" height="29" uuid="4d5bb3a4-6d15-4c91-93a4-d4a9a80e80d2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d4fc0176-438c-496f-82d6-6d3ced4f7d52"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="115" width="80" height="29" uuid="c4bbe9de-d03e-4db0-a2ea-3075466b1e14">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b525c632-2634-45e1-9c16-0a4492d55287"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="175" width="80" height="29" uuid="4f2dc5e4-83e2-4284-9604-5e63e794b26f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="66b71c19-66a5-4796-81b4-5eb5d85e051b"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{RoomId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="231" width="80" height="29" uuid="f3f1366d-71b4-488a-94bc-e764009438a0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b9d070e5-cc73-4316-bd75-a5f2374a970e"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="281" width="80" height="29" uuid="d002b1b5-3283-4bef-8026-03d011e4e505">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="941ee299-62f4-4b60-bec2-c916b670c558"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{dayCount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="331" width="77" height="29" uuid="aea8a4c4-9c43-4882-bbc9-22fb9b4f7175">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b47f32ed-2b93-465c-9feb-486c70bc5662"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{totalCost}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="69" width="80" height="30" uuid="4e34613c-9a33-48bc-af95-97b7f14cfa07">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d4fc0176-438c-496f-82d6-6d3ced4f7d52"/>
+				</reportElement>
+				<text><![CDATA[Customer ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="119" width="80" height="30" uuid="fb8633f6-9a86-487d-bc04-5bea772cdcbd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b525c632-2634-45e1-9c16-0a4492d55287"/>
+				</reportElement>
+				<text><![CDATA[Customer Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="179" width="80" height="30" uuid="7eebd939-62ca-4d65-b4dc-597a320f3a4d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="66b71c19-66a5-4796-81b4-5eb5d85e051b"/>
+				</reportElement>
+				<text><![CDATA[RoomId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="219" width="80" height="30" uuid="ba690ffe-0dd9-417a-b66e-8bec7f05e4e6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b9d070e5-cc73-4316-bd75-a5f2374a970e"/>
+				</reportElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="280" width="80" height="30" uuid="aaeabbe8-5888-4579-9bfe-f4b60b507fce">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="941ee299-62f4-4b60-bec2-c916b670c558"/>
+				</reportElement>
+				<text><![CDATA[dayCount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="330" width="80" height="30" uuid="da5d5b8e-38cd-4bfb-b78e-89a5ec750e33">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b47f32ed-2b93-465c-9feb-486c70bc5662"/>
+				</reportElement>
+				<text><![CDATA[totalCost]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

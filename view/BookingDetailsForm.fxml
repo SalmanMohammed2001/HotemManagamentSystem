@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BookingFormController">
+   <children>
+      <AnchorPane layoutY="5.0" prefHeight="833.0" prefWidth="1155.0" style="-fx-background-color: white;">
+         <children>
+            <JFXButton layoutX="14.0" layoutY="24.0" onAction="#btnBackToHomeAction" prefHeight="31.0" prefWidth="121.0" style="-fx-background-color: #34495e; -fx-background-radius: 6px;" text="Back To Home" textFill="#e4d7d7" />
+            <Label layoutX="290.0" layoutY="22.0" prefHeight="21.0" prefWidth="222.0" text="Booking" textFill="#1b0f9e">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cbmCustomerId" layoutX="15.0" layoutY="196.0" prefWidth="150.0" promptText="Customer Id" />
+            <Label layoutX="23.0" layoutY="168.0" text="Customer Details" textFill="#d30f0f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtBookingId" disable="true" editable="false" layoutX="22.0" layoutY="101.0" prefHeight="31.0" prefWidth="194.0" promptText="BookingId" />
+            <TextField fx:id="BookingDate" disable="true" editable="false" layoutX="941.0" layoutY="101.0" prefHeight="31.0" prefWidth="205.0" promptText="BookingDate" />
+            <TextField fx:id="txtName" disable="true" editable="false" layoutX="183.0" layoutY="197.0" prefHeight="31.0" prefWidth="186.0" promptText="Name" />
+            <TextField fx:id="txtCountry" disable="true" editable="false" layoutX="375.0" layoutY="197.0" prefHeight="31.0" prefWidth="249.0" promptText="Country" />
+            <TextField fx:id="txtEmail" disable="true" editable="false" layoutX="631.0" layoutY="197.0" prefHeight="31.0" prefWidth="229.0" promptText="Email" />
+            <Label layoutX="23.0" layoutY="329.0" text="Room Details" textFill="#d30f0f">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmdRoomId" layoutX="13.0" layoutY="353.0" prefHeight="31.0" prefWidth="163.0" promptText="Room Number" />
+            <TextField fx:id="txtBedType" disable="true" editable="false" layoutX="189.0" layoutY="353.0" prefHeight="31.0" prefWidth="205.0" promptText="Bed Type" />
+            <TextField fx:id="txtAvailbility" disable="true" editable="false" layoutX="402.0" layoutY="353.0" prefHeight="31.0" prefWidth="213.0" promptText="Availbility" />
+            <TextField fx:id="txtPrice" disable="true" editable="false" layoutX="812.0" layoutY="353.0" prefHeight="31.0" prefWidth="176.0" promptText="price" />
+            <TextField fx:id="txtCleanStatus" disable="true" layoutX="621.0" layoutY="353.0" prefHeight="31.0" prefWidth="186.0" promptText="Clean Status" />
+            <JFXButton layoutX="994.0" layoutY="409.0" onAction="#btnAddTocardOnAction" prefHeight="40.0" prefWidth="142.0" style="-fx-background-color: #3498db; -fx-background-radius: 6px;" text="Add Cart" textFill="WHITE" />
+            <Separator layoutX="227.0" layoutY="65.0" prefHeight="3.0" prefWidth="862.0" />
+            <TableView fx:id="tblCart" layoutX="15.0" layoutY="481.0" prefHeight="278.0" prefWidth="1132.0">
+               <columns>
+                  <TableColumn fx:id="colCode" prefWidth="119.0" text="Room No" />
+                  <TableColumn fx:id="colBedType" prefWidth="186.0" text="BedType" />
+                  <TableColumn fx:id="colAvailability" prefWidth="161.0" text="Availbility" />
+                  <TableColumn fx:id="colCleanStatus" prefWidth="160.0" text="Clean Status" />
+                  <TableColumn fx:id="colPrice" prefWidth="171.0" text="price" />
+                  <TableColumn fx:id="colDayConut" prefWidth="92.0" text="DayCount" />
+                  <TableColumn fx:id="colTotal" prefWidth="98.0" text="Total" />
+                  <TableColumn fx:id="colOption" prefWidth="143.0" text="Option" />
+               </columns>
+            </TableView>
+            <Label fx:id="lblTotal" layoutX="104.0" layoutY="779.0" prefHeight="21.0" prefWidth="222.0" textFill="#9c2110">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="991.0" layoutY="779.0" onAction="#btnOrderBookingOnAction" prefHeight="31.0" prefWidth="121.0" style="-fx-background-color: #2ecc71; -fx-background-radius: 6px;" text="Order Booking" textFill="WHITE" />
+            <Label layoutX="29.0" layoutY="776.0" prefHeight="40.0" prefWidth="100.0" text="Total: " textFill="#9c2110">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtMobileNo" disable="true" editable="false" layoutX="865.0" layoutY="197.0" prefHeight="31.0" prefWidth="282.0" promptText="+94" />
+            <TextField fx:id="txtAge" disable="true" editable="false" layoutX="17.0" layoutY="253.0" prefHeight="31.0" prefWidth="186.0" promptText="Age" />
+            <TextField fx:id="txtGender" disable="true" editable="false" layoutX="215.0" layoutY="253.0" prefHeight="31.0" prefWidth="186.0" promptText="Gender" />
+            <Separator layoutX="8.0" layoutY="305.0" prefHeight="3.0" prefWidth="1051.0" />
+            <TextField fx:id="txtDayCount" layoutX="996.0" layoutY="352.0" prefHeight="31.0" prefWidth="150.0" promptText="Day count" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

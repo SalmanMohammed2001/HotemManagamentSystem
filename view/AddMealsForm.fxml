@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="748.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddMealsFormController">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="-2.0" prefHeight="760.0" prefWidth="1110.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane prefHeight="760.0" prefWidth="177.0" style="-fx-background-color: D9D9D9;">
+               <children>
+                  <Separator layoutX="31.0" layoutY="214.0" prefHeight="3.0" prefWidth="146.0" />
+                  <ImageView fitHeight="106.0" fitWidth="150.0" layoutX="37.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/hotel.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="40.0" layoutY="177.0" text="Ramada Hotel">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button layoutX="192.0" layoutY="40.0" mnemonicParsing="false" onAction="#btnBackToHomeAction" prefHeight="31.0" prefWidth="146.0" style="-fx-background-color: #34495e; -fx-background-radius: 5px;" text="Back To Home" textFill="#fff7f7">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="356.0" layoutY="36.0" prefHeight="40.0" prefWidth="127.0" text="Add Meals">
+               <font>
+                  <Font name="Brush Script MT Italic" size="30.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="518.0" layoutY="64.0" prefHeight="3.0" prefWidth="387.0" style="-fx-background-color: #718093;" />
+            <JFXTextField fx:id="txtMelaId" labelFloat="true" layoutX="192.0" layoutY="127.0" prefHeight="31.0" prefWidth="200.0" promptText="Meal Id">
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.36893203883495146">
+                     <stops>
+                        <Stop color="#2a4490" />
+                        <Stop color="#d01919" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtMealName" labelFloat="true" layoutX="412.0" layoutY="127.0" prefHeight="31.0" prefWidth="212.0" promptText=" Meal Name">
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.36893203883495146">
+                     <stops>
+                        <Stop color="#2a4490" />
+                        <Stop color="#d01919" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtUnitePrice" labelFloat="true" layoutX="644.0" layoutY="127.0" onKeyReleased="#txtUnitePriceKeyReleasedOnAction" prefHeight="31.0" prefWidth="200.0" promptText="Unite Price">
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.36893203883495146">
+                     <stops>
+                        <Stop color="#2a4490" />
+                        <Stop color="#d01919" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+            </JFXTextField>
+            <JFXTextField fx:id="txtQTYOnHand" labelFloat="true" layoutX="861.0" layoutY="127.0" onKeyReleased="#txtQTYOnHandKeyReleasedOnAction" prefHeight="31.0" prefWidth="200.0" promptText="QTY On Hand">
+               <focusColor>
+                  <LinearGradient endX="1.0" endY="1.0" startY="0.36893203883495146">
+                     <stops>
+                        <Stop color="#2a4490" />
+                        <Stop color="#d01919" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </focusColor>
+            </JFXTextField>
+            <JFXButton fx:id="saveMeal" layoutX="883.0" layoutY="200.0" onAction="#btnSaveMeal" prefHeight="31.0" prefWidth="187.0" style="-fx-background-color: #1B9CFC; -fx-background-radius: 9;" text="Save Meal" textFill="#fff9f9">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <TextField fx:id="txtSearch" layoutX="192.0" layoutY="203.0" prefHeight="31.0" prefWidth="635.0" promptText="Search" />
+            <TableView fx:id="tbMeals" layoutX="187.0" layoutY="289.0" prefHeight="384.0" prefWidth="915.0">
+               <columns>
+                  <TableColumn fx:id="colMealId" prefWidth="110.0" text="Meal  Id" />
+                  <TableColumn fx:id="colName" prefWidth="202.0" text="Name" />
+                  <TableColumn fx:id="colUnitePrice" prefWidth="270.0" text="Unite Price" />
+                  <TableColumn fx:id="colQtyOnHand" prefWidth="143.0" text="QTY On Hand" />
+                  <TableColumn fx:id="colOption" prefWidth="189.0" text="Option" />
+               </columns>
+            </TableView>
+            <JFXButton layoutX="952.0" layoutY="42.0" onAction="#btnAddMeal" prefHeight="17.0" prefWidth="135.0" style="-fx-background-color: #2d3436; -fx-background-radius: 9;" text="Add  Meals" textFill="#fff9f9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

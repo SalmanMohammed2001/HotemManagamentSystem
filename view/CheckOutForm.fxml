@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="713.0" prefWidth="819.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CheckOutFormController">
+   <children>
+      <AnchorPane layoutY="-5.0" prefHeight="760.0" prefWidth="177.0" style="-fx-background-color: D9D9D9;">
+         <children>
+            <Separator layoutX="31.0" layoutY="214.0" prefHeight="3.0" prefWidth="146.0" />
+            <ImageView fitHeight="106.0" fitWidth="150.0" layoutX="37.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/hotel.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="40.0" layoutY="177.0" text="Ramada Hotel">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="207.0" layoutY="451.0" onAction="#btnCheckOut" prefHeight="3.0" prefWidth="127.0" style="-fx-background-color: #1B9CFC; -fx-background-radius: 5px;" text="Check Out" textFill="#fff9f9">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="421.0" layoutY="88.0" prefHeight="3.0" prefWidth="384.0" style="-fx-background-color: #718093;" />
+      <Label layoutX="219.0" layoutY="61.0" text="Check out Customer">
+         <font>
+            <Font name="Brush Script MT Italic" size="30.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbRoomId" layoutX="212.0" layoutY="144.0" prefHeight="31.0" prefWidth="243.0" promptText="Room Id" />
+      <Button layoutX="356.0" layoutY="451.0" mnemonicParsing="false" onAction="#btnBackToHome" prefHeight="31.0" prefWidth="127.0" style="-fx-background-color: #34495e; -fx-background-radius: 5px;" text="Back To Home" textFill="#fff7f7">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="txtBookingId" layoutX="212.0" layoutY="214.0" prefHeight="31.0" prefWidth="243.0" promptText="Booking Id" />
+      <TextField fx:id="price" layoutX="212.0" layoutY="277.0" prefHeight="31.0" prefWidth="243.0" promptText="price" />
+      <TextField fx:id="txtDayCount" layoutX="210.0" layoutY="343.0" prefHeight="31.0" prefWidth="243.0" promptText="dayCount" />
+      <TextField fx:id="txtDate" layoutX="550.0" layoutY="30.0" prefHeight="31.0" prefWidth="243.0" promptText="Date" />
+   </children>
+</AnchorPane>

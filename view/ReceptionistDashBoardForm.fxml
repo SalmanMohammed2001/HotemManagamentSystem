@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="repDashBoardContext" prefHeight="712.0" prefWidth="974.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceptionistDashBoardFormController">
+   <children>
+      <AnchorPane layoutY="100.0" prefHeight="654.0" prefWidth="0.0" style="-fx-background-color: #808080;" />
+      <ImageView fitHeight="796.0" fitWidth="1284.0" layoutX="-17.0" layoutY="-19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/dark-wall-empty-room-with-plants-floor-3d-rendering.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="44.0" prefHeight="48.0" prefWidth="325.0" text="Welcome Ramada  Hotel ">
+         <font>
+            <Font name="Brush Script MT Italic" size="35.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="311.0" layoutY="70.0" prefHeight="5.0" prefWidth="325.0" style="-fx-background-color: #718093;" />
+      <Label fx:id="lblDate" layoutX="647.0" layoutY="57.0" prefHeight="36.0" prefWidth="142.0" text="2022-11-15">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="769.0" layoutY="57.0" prefHeight="36.0" prefWidth="142.0" text="1:47">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="848.0" layoutY="73.0" prefHeight="5.0" prefWidth="258.0" style="-fx-background-color: #718093;" />
+      <JFXButton layoutX="1121.0" layoutY="60.0" onAction="#btnLogOutOnAction" style="-fx-background-color: red;" text="LougOut" textFill="#ddd8d8" />
+      <AnchorPane layoutX="263.0" layoutY="140.0" prefHeight="142.0" prefWidth="154.0" style="-fx-border-color: white; -fx-border-radius: 8;">
+         <children>
+            <ImageView fitHeight="86.0" fitWidth="94.0" layoutX="32.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/Room%20Details.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="441.0" layoutY="140.0" prefHeight="142.0" prefWidth="154.0" style="-fx-border-color: white; -fx-border-radius: 8;">
+         <children>
+            <ImageView fitHeight="64.0" fitWidth="110.0" layoutX="41.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/avblrooms.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="620.0" layoutY="140.0" prefHeight="142.0" prefWidth="154.0" style="-fx-border-color: white; -fx-border-radius: 8;">
+         <children>
+            <ImageView fitHeight="77.0" fitWidth="121.0" layoutX="44.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/Employee%20Info.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="796.0" layoutY="140.0" prefHeight="142.0" prefWidth="154.0" style="-fx-border-color: white; -fx-border-radius: 8;">
+         <children>
+            <ImageView fitHeight="77.0" fitWidth="100.0" layoutX="25.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/Gues%20tInfon.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <JFXButton alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="441.0" layoutY="142.0" onAction="#btnRoomBooking" prefHeight="142.0" prefWidth="154.0" text="Room Booking">
+         <font>
+            <Font name="Magneto Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+         <ripplerFill>
+            <LinearGradient endX="0.08252427184466016" endY="1.0" startX="0.6213592233009708">
+               <stops>
+                  <Stop color="#3c373c" />
+                  <Stop color="#3c373c" offset="0.47101449275362317" />
+                  <Stop color="#b2b2b2" offset="0.6739130434782609" />
+                  <Stop color="#b2b2b2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.7524271844660194" radius="0.5">
+               <stops>
+                  <Stop color="#bc8c8c" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="620.0" layoutY="139.0" onAction="#brnEmployeeInfo" prefHeight="142.0" prefWidth="154.0" text="Employee Info">
+         <font>
+            <Font name="Magneto Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+         <ripplerFill>
+            <LinearGradient endX="0.08252427184466016" endY="1.0" startX="0.6213592233009708">
+               <stops>
+                  <Stop color="#3c373c" />
+                  <Stop color="#3c373c" offset="0.47101449275362317" />
+                  <Stop color="#b2b2b2" offset="0.6739130434782609" />
+                  <Stop color="#b2b2b2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.7524271844660194" radius="0.5">
+               <stops>
+                  <Stop color="#bc8c8c" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </JFXButton>
+      <AnchorPane layoutX="984.0" layoutY="140.0" prefHeight="142.0" prefWidth="154.0" style="-fx-border-color: white; -fx-border-radius: 8;">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="26.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/roomUpdate-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <JFXButton alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="-1.0" layoutY="-4.0" onAction="#RoomUpdateOnAction" prefHeight="142.0" prefWidth="154.0" text="Room Update">
+               <font>
+                  <Font name="Magneto Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+               <ripplerFill>
+                  <LinearGradient endX="0.08252427184466016" endY="1.0" startX="0.6213592233009708">
+                     <stops>
+                        <Stop color="#3c373c" />
+                        <Stop color="#3c373c" offset="0.47101449275362317" />
+                        <Stop color="#b2b2b2" offset="0.6739130434782609" />
+                        <Stop color="#b2b2b2" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.7524271844660194" radius="0.5">
+                     <stops>
+                        <Stop color="#bc8c8c" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </JFXButton>
+         </children></AnchorPane>
+      <JFXButton alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="798.0" layoutY="140.0" onAction="#btnCustomerInfo" prefHeight="142.0" prefWidth="154.0" text="Customer Info">
+         <font>
+            <Font name="Magneto Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+         <ripplerFill>
+            <LinearGradient endX="0.08252427184466016" endY="1.0" startX="0.6213592233009708">
+               <stops>
+                  <Stop color="#3c373c" />
+                  <Stop color="#3c373c" offset="0.47101449275362317" />
+                  <Stop color="#b2b2b2" offset="0.6739130434782609" />
+                  <Stop color="#b2b2b2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.7524271844660194" radius="0.5">
+               <stops>
+                  <Stop color="#bc8c8c" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </JFXButton>
+      <AnchorPane layoutX="262.0" layoutY="334.0" prefHeight="142.0" prefWidth="154.0" style="-fx-border-color: white; -fx-border-radius: 8;">
+         <children>
+            <ImageView fitHeight="77.0" fitWidth="106.0" layoutX="39.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/guest.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="441.0" layoutY="334.0" prefHeight="142.0" prefWidth="154.0" style="-fx-border-color: white; -fx-border-radius: 8;">
+         <children>
+            <ImageView fitHeight="111.0" fitWidth="100.0" layoutX="26.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/Update%20Room.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="622.0" layoutY="334.0" prefHeight="142.0" prefWidth="154.0" style="-fx-border-color: white; -fx-border-radius: 8;">
+         <children>
+            <ImageView fitHeight="111.0" fitWidth="100.0" layoutX="22.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/mealBook-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="796.0" layoutY="337.0" prefHeight="142.0" prefWidth="154.0" style="-fx-border-color: white; -fx-border-radius: 8;">
+         <children>
+            <ImageView fitHeight="77.0" fitWidth="76.0" layoutX="36.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/check%20in.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="986.0" layoutY="340.0" prefHeight="142.0" prefWidth="154.0" style="-fx-border-color: white; -fx-border-radius: 8;">
+         <children>
+            <ImageView fitHeight="76.0" fitWidth="120.0" layoutX="30.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/check%20out.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <JFXButton alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="267.0" layoutY="142.0" onAction="#SearchRoomOnAction" prefHeight="142.0" prefWidth="154.0" text="Search Room">
+         <font>
+            <Font name="Magneto Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+         <ripplerFill>
+            <LinearGradient endX="0.08252427184466016" endY="1.0" startX="0.6213592233009708">
+               <stops>
+                  <Stop color="#3c373c" />
+                  <Stop color="#3c373c" offset="0.47101449275362317" />
+                  <Stop color="#b2b2b2" offset="0.6739130434782609" />
+                  <Stop color="#b2b2b2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.7524271844660194" radius="0.5">
+               <stops>
+                  <Stop color="#bc8c8c" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="622.0" layoutY="334.0" onAction="#btnMelOnAction" prefHeight="142.0" prefWidth="154.0" text="Meal Order">
+         <font>
+            <Font name="Magneto Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+         <ripplerFill>
+            <LinearGradient endX="0.08252427184466016" endY="1.0" startX="0.6213592233009708">
+               <stops>
+                  <Stop color="#3c373c" />
+                  <Stop color="#3c373c" offset="0.47101449275362317" />
+                  <Stop color="#b2b2b2" offset="0.6739130434782609" />
+                  <Stop color="#b2b2b2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.7524271844660194" radius="0.5">
+               <stops>
+                  <Stop color="#bc8c8c" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="437.0" layoutY="333.0" onAction="#btnBookingDetailsOnAction" prefHeight="142.0" prefWidth="154.0" text="Booking Details">
+         <font>
+            <Font name="Magneto Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+         <ripplerFill>
+            <LinearGradient endX="0.08252427184466016" endY="1.0" startX="0.6213592233009708">
+               <stops>
+                  <Stop color="#3c373c" />
+                  <Stop color="#3c373c" offset="0.47101449275362317" />
+                  <Stop color="#b2b2b2" offset="0.6739130434782609" />
+                  <Stop color="#b2b2b2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.7524271844660194" radius="0.5">
+               <stops>
+                  <Stop color="#bc8c8c" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="791.0" layoutY="337.0" onAction="#btnMealOrderDetailsOnAction" prefHeight="142.0" prefWidth="154.0" text="Meal Order Details">
+         <font>
+            <Font name="Magneto Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+         <ripplerFill>
+            <LinearGradient endX="0.08252427184466016" endY="1.0" startX="0.6213592233009708">
+               <stops>
+                  <Stop color="#3c373c" />
+                  <Stop color="#3c373c" offset="0.47101449275362317" />
+                  <Stop color="#b2b2b2" offset="0.6739130434782609" />
+                  <Stop color="#b2b2b2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.7524271844660194" radius="0.5">
+               <stops>
+                  <Stop color="#bc8c8c" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="984.0" layoutY="343.0" onAction="#btnCkeckOutWinndow" prefHeight="142.0" prefWidth="154.0" text="Check Out">
+         <font>
+            <Font name="Magneto Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+         <ripplerFill>
+            <LinearGradient endX="0.08252427184466016" endY="1.0" startX="0.6213592233009708">
+               <stops>
+                  <Stop color="#3c373c" />
+                  <Stop color="#3c373c" offset="0.47101449275362317" />
+                  <Stop color="#b2b2b2" offset="0.6739130434782609" />
+                  <Stop color="#b2b2b2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.7524271844660194" radius="0.5">
+               <stops>
+                  <Stop color="#bc8c8c" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="259.0" layoutY="333.0" onAction="#btnCustomerOnAction" prefHeight="142.0" prefWidth="154.0" text="Customer">
+         <font>
+            <Font name="Magneto Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+         <ripplerFill>
+            <LinearGradient endX="0.08252427184466016" endY="1.0" startX="0.6213592233009708">
+               <stops>
+                  <Stop color="#3c373c" />
+                  <Stop color="#3c373c" offset="0.47101449275362317" />
+                  <Stop color="#b2b2b2" offset="0.6739130434782609" />
+                  <Stop color="#b2b2b2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.7524271844660194" radius="0.5">
+               <stops>
+                  <Stop color="#bc8c8c" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </JFXButton>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

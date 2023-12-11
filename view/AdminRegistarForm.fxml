@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="610.0" prefWidth="453.0" style="-fx-background-color: B8B8B8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminRegistarFormController">
+   <children>
+      <AnchorPane fx:id="btnAddNewUser" layoutX="12.0" layoutY="14.0" prefHeight="582.0" prefWidth="429.0" style="-fx-background-color: E3E5E4; -fx-background-radius: 6;">
+         <children>
+            <JFXTextField fx:id="txtUserName" alignment="CENTER" focusColor="#b01bb5" labelFloat="true" layoutX="43.0" layoutY="218.0" prefHeight="31.0" prefWidth="336.0" promptText="User Name" />
+            <JFXTextField fx:id="txtEmail" alignment="CENTER" focusColor="#b01bb5" labelFloat="true" layoutX="43.0" layoutY="269.0" prefHeight="31.0" prefWidth="336.0" promptText="Email" />
+            <JFXTextField fx:id="txtPassword" alignment="CENTER" focusColor="#b01bb5" labelFloat="true" layoutX="44.0" layoutY="324.0" prefHeight="31.0" prefWidth="336.0" promptText="Password" />
+            <JFXTextField fx:id="txtConfirmPssword" alignment="CENTER" focusColor="#b01bb5" labelFloat="true" layoutX="44.0" layoutY="399.0" onAction="#txtConfirmPasswordOnAction" prefHeight="31.0" prefWidth="336.0" promptText="Confirm Password" />
+            <JFXButton fx:id="btnRegisterId" alignment="CENTER" buttonType="RAISED" layoutX="40.0" layoutY="478.0" onAction="#btnRegisterOnAction" prefHeight="46.0" prefWidth="347.0" ripplerFill="#bf289e" style="-fx-background-color: #4cd137; -fx-background-radius: 10;" text="Register" textFill="#f5f5f5">
+               <font>
+                  <Font name="Bodoni MT Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="lblPasswordDoesNotMatch1" layoutX="192.0" layoutY="352.0" text="Password Does Not Match" textFill="#f20d0d" />
+            <Label fx:id="lblPasswordDoesNotMatch2" layoutX="205.0" layoutY="430.0" text="Password Does Not Match" textFill="#d31717" />
+            <JFXButton layoutX="270.0" layoutY="137.0" onAction="#btnAddNewUser" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: #00a8ff; -fx-background-radius: 5;" text="Add New User">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="lblId" layoutX="306.0" layoutY="164.0" prefHeight="21.0" prefWidth="59.0" text="UserId" />
+         </children>
+      </AnchorPane>
+      <Text fill="#070707" layoutX="109.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Admin Account" wrappingWidth="273.6708984375">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="23.0" layoutY="24.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="31.0" prefWidth="121.0" style="-fx-background-color: #34495e; -fx-background-radius: 5px;" text="Back To Home" textFill="#fff7f7">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
